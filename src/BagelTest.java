@@ -10,6 +10,7 @@ import java.util.Random;
 public class BagelTest extends AbstractGame {
     private Image smiley;
     private Image bagel;
+    private Image heart;
     private double x = 100;
     private double y = 100;
 
@@ -17,6 +18,7 @@ public class BagelTest extends AbstractGame {
         super(800, 600, "Hello World");
         bagel = new Image("res/bagel.png");
         smiley = new Image("res/smiley.png");
+        heart = new Image("res/heart.png");
     }
 
     /**
@@ -55,6 +57,6 @@ public class BagelTest extends AbstractGame {
 
 
         bagel.draw(Window.getWidth() / 2.0, Window.getHeight() / 2.0);
-        smiley.draw(x, y);
+        heart.draw(x, y);
     }
 }
